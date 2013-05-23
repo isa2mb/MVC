@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+       <servlet-name>controller</servlet-name> <!-- name's not matter -->
+       <servlet-class>org.essilab.servlet.mvc.example.FrontController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>/res/*</url-pattern>
+    </servlet-mapping>    
+    <servlet-mapping>
+      <servlet-name>controller</servlet-name>
+      <url-pattern>/</url-pattern>
+    </servlet-mapping>
+     
+</web-app>
